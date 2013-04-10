@@ -13,8 +13,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL') \
 #=========================================================
 
 @app.route('/')
-def landing_page(name=None):
-    return render_template('landing.html', name=name)
+def home_page(name=None):
+    return render_template('home.html', name=name)
 
 #@app.route('/register')
 
